@@ -93,9 +93,11 @@ def list_Method():
     car.clear()
     print(car)
 
+
 def list_DelState():
     data = [1, 2.34, -3.14, 112, 12e3, 4]
 
+    # Del has function to delete a data in List
     del data[0]
     print(data)
 
@@ -103,4 +105,62 @@ def list_DelState():
     print(data)
 
     del data[:]
+    print(data)
+
+
+def list_Comprehension():
+    data = []
+
+    # Addition data on List
+    for number in range(10):
+        data.append(number ** 2 / 3)
+
+    print(data)
+
+    # Another way to in arithmetic data
+    data = list(map(lambda x: x ** 2 / 3, range(10)))
+    print(data)
+
+    # Equivalent with on the top one
+    data = [x ** 2 / 3 for x in range(10)]
+    print(data)
+    del data
+
+    # This is how to count combination
+    combination = [(x, y) for x in [5, 2, 3] for y in [3, 1, 4] if x != y]
+    print(combination)
+    print(len(combination))
+
+    # it's equivalent to:
+    combination.clear()
+    combination = []
+    for a in [5, 2, 3]:
+        for b in [3, 1, 4]:
+            if a != b:
+                combination.append((a, b))
+
+    print(combination)
+
+    # Some example operation in list
+    del combination
+    data = [5, -4, 3, -2, 1]
+    new_data = [x * -1 for x in data]
+    print(new_data)
+
+    # Filter data in list
+    print([x for x in data if x <= 0])
+
+    # Apply function in list
+    print(abs(x) for x in data[1:3])
+
+    # Call method in all list
+    data.clear()
+    new_data.clear()
+    data = [' Ice Cream', ' B A K S O', 'Aku Suka Susunya']
+    new_data = [x.strip for x in data]
+    print(new_data)
+
+    # make a list of 2 tuples like (number, number * 2)
+    data.clear()
+    data = [(x, x * 2) for x in range(8)]
     print(data)
