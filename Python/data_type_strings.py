@@ -64,13 +64,13 @@ def string_Type():
 
 
 def string_Operator():
-    # This is some example of String operator
+    # This is some example of String Operator
     a = 3 * 'you' + 'haha'
     b = 'He''llo'
     print(a)
     print(b)
 
-    # You can also make a text using string addition operator
+    # You can also make a text using string addition Operator
     text = (
         "put some text in here"
         "And voila, it's gonna be a text"
