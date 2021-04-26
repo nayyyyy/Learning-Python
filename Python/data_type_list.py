@@ -169,3 +169,38 @@ def list_Comprehension():
     new_data.clear()
     new_data = [x for y in data for x in y]
     print(new_data)
+
+
+def list_nested_comprehensif():
+    # Declare a variabel contains matrix 4 x 4
+    matrix = [
+        (1, 1, 1, 2),
+        (2, 0, 0, 1),
+        (0, 5, 1, 1),
+        (2, 0, 0, 0),
+        (1, 2, 3, 4)
+    ]
+
+    # This is how to transpose matrix in Python
+    transpose = [[row[i] for row in matrix] for i in range(len(matrix) - 1)]
+    print(transpose)
+
+    # This is a manual method to transpose a matrix in Python
+    transpose.clear()
+    for i in range(len(matrix) - 1):
+        transpose.append([row[i] for row in matrix])
+
+    print(transpose)
+
+    # Which means, it's same with this
+    transpose.clear()
+    for i in range (len(matrix)-1):
+        transpose_row = []
+        for row in matrix:
+            transpose_row.append(row[i])
+    transpose.append(transpose_row)
+
+    print(transpose)
+
+    # And this is a simple way to transform matrix
+    print(list(zip(*matrix)))
