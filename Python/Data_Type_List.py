@@ -164,3 +164,8 @@ def list_Comprehension():
     data.clear()
     data = [(x, x * 2) for x in range(8)]
     print(data)
+
+    # Flatting the list of 2 tuples
+    new_data.clear()
+    new_data = [x for y in data for x in y]
+    print(new_data)
