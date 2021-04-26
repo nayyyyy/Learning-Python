@@ -22,7 +22,7 @@ def list_Sample():
 
     # Include new data at the end of list
     data.append(100)
-    data.append( 8 ** 3)
+    data.append(8 ** 3)
     print(data)
 
     # Slicing a List
@@ -51,6 +51,7 @@ def list_Sample():
     print(mix[1])
     print(mix[1][1])
     print(mix)
+
 
 def list_Method():
     # Declared a new list
@@ -81,4 +82,25 @@ def list_Method():
     car.reverse()
     print(car)
 
-    #
+    # .sort() has a function to short data
+    print(car.sort())
+
+    # .pop() has a function to delete last data in list
+    car.pop()
+    print(car)
+
+    # .clear() has a function to empty list
+    car.clear()
+    print(car)
+
+def list_DelState():
+    data = [1, 2.34, -3.14, 112, 12e3, 4]
+
+    del data[0]
+    print(data)
+
+    del data[:2]
+    print(data)
+
+    del data[:]
+    print(data)
