@@ -84,7 +84,7 @@ def string_Operator():
 
 
 def string_Method():
-    text = " This is my First time learn, Python"
+    text = " This is my First time learn, src"
 
     # strip() has function to remove any whitespaces in text
     print(text.strip())
@@ -117,7 +117,7 @@ def string_Method():
     print(text.title())
 
     # replace('a', 'b') has function to replace 'a' to 'b'
-    print(text.replace('Python', 'Hython'))
+    print(text.replace('src', 'Hython'))
 
     # join() has function to combine all string in a tuple
     data = ['Apple', 'Banana', 'Carrot']

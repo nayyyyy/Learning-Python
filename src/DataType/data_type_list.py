@@ -181,11 +181,11 @@ def list_nested_comprehensif():
         (1, 2, 3, 4)
     ]
 
-    # This is how to transpose matrix in Python
+    # This is how to transpose matrix in src
     transpose = [[row[i] for row in matrix] for i in range(len(matrix) - 1)]
     print(transpose)
 
-    # This is a manual method to transpose a matrix in Python
+    # This is a manual method to transpose a matrix in src
     transpose.clear()
     for i in range(len(matrix) - 1):
         transpose.append([row[i] for row in matrix])
